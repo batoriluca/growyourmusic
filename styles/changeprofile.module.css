@@ -1,0 +1,514 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+.sc1 {
+    height: 100vh;
+    width: 100vw;
+    background-size: 300% 300%;
+    background-image: linear-gradient(-45deg, #313131 0%, black 100%);
+    animation: backgroundAnm 10s linear infinite;
+    overflow: hidden;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.sc1 i {
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+@keyframes backgroundAnm {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.main_container {
+    width: 80%;
+    position: relative;
+    height: 92vh;
+    margin: auto;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    background: #4a4949c7;
+    box-shadow: 1px -2px 15px 5px #6657DA, 1px -2px 150px 5px #6657DA;
+    overflow: hidden;
+    border-radius: 16px;
+    display: flex;
+    z-index: 2;
+}
+
+
+/* Here is the nav bar css */
+
+.navbar_contanier {
+    width: 13%;
+}
+
+.navbar_contanier {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container_navbar .navbar {
+    width: 100%;
+}
+
+
+/* Here is the main container css */
+
+.content_contanier {
+    width: 87%;
+}
+
+
+/* Content container  */
+
+.status_bar {
+    display: flex;
+    padding: 3px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.greets_to_user {
+    color: #fff;
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.container_searchbar {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10.5px 0px;
+}
+
+.searchbox {
+    display: flex;
+    align-items: center;
+    width: 355px;
+    height: 30px;
+    padding: 6px 12px;
+    background: linear-gradient( 180deg, rgba(46, 51, 90, 0.3) 0%, rgba(28, 27, 51, 0.3) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+
+.searchbox svg {
+    color: #fff;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.searchInput {
+    border: 0;
+    width: 100%;
+    color: #fff;
+    background: transparent;
+    font-family: "DM Sans", sans-serif;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.searchInput::placeholder {
+    color: #fff;
+}
+
+.searchInput:focus {
+    outline: none;
+}
+
+.searchInput:focus-visible {
+    outline: none;
+}
+
+.user_btns {
+    display: flex;
+    margin-left: 10px;
+}
+
+.user_btns svg {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+}
+
+.profileimg {
+    width: 30px;
+    margin-left: 10px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+/* Here is the post */
+
+.feed_with_user {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feed_posts {
+    height: 84vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    border-radius: 10px;
+    background: #ffffff21;
+    padding: 15px;
+    padding-bottom: 0px;
+    width: 65%;
+}
+
+.post .profileimg {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.user_name {
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.profile_bar {
+    width: 35%;
+    position: relative;
+    color: white;
+    overflow-y: auto;
+    height: 84vh;
+    font-family: "Poppins", sans-serif;
+    margin-top: 0px;
+    margin-left: 10px;
+    background-color: #A4A4A4;
+    background-color: #ffffff21;
+    border-radius: 10px;
+    margin-right: 10px;
+    padding: 20px;
+}
+
+.profile_pic img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+@media screen and (max-width: 850px) {
+    .main_container {
+        width: 100%;
+        flex-direction: column-reverse;
+        overflow-y: hidden;
+        height: auto;
+        margin: 0;
+        border-radius: 0;
+    }
+    .navbar_contanier {
+        width: 100%;
+        background: #4a4949;
+    }
+    .content_contanier {
+        width: 100%;
+    }
+    .profile_bar {
+        display: none;
+    }
+    .container_navbar .navbar {
+        width: 100%;
+    }
+    .searchbox {
+        width: 360px;
+        height: 40px;
+        margin: auto 0;
+        border-radius: 30px;
+    }
+    .feed_posts {
+        background: #ffffff21;
+        height: 100%;
+        width: 100%;
+    }
+    .greets_to_user {
+        display: none;
+    }
+    .status_bar {
+        padding: 10px 20px;
+        background: #4a4949;
+    }
+    .container_searchbar {
+        justify-content: space-between;
+        width: 100%;
+        padding: 6.5px 0px;
+    }
+    .searchInput {
+        font-size: 18px;
+    }
+    .searchbox svg {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .searchbox {
+        width: 210px;
+        height: 28px;
+    }
+    .feed_with_user {
+        height: 580px;
+    }
+    .status_bar {
+        padding: 4px 18px;
+    }
+    .searchbox svg {
+        font-size: 18px;
+    }
+    .searchInput {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .main_container {
+        width: 100%;
+        background-color: transparent;
+        box-shadow: none;
+        overflow: unset;
+        overflow-x: hidden;
+        margin-left: 0px;
+    }
+    .feed_with_user {
+        height: 590px;
+    }
+    .searchbox svg {
+        font-size: 16px;
+    }
+    .searchInput {
+        font-size: 14px;
+    }
+    .searchbox {
+        width: 200px;
+        height: 28px;
+    }
+}
+
+.r_side {
+    width: 100%;
+    padding: 0;
+    padding-top: 10px;
+    height: 100%;
+    overflow-y: hidden;
+    margin-right: 10px;
+    overflow-x: hidden;
+    color: #6c5ce7;
+    font-family: "Poppins", sans-serif;
+}
+
+.r_side div h1 {
+    font-size: 22px;
+}
+
+.r_side div {
+    border: 4px solid #9580db;
+    width: 85%;
+    color: #6c5ce7;
+    margin: auto;
+    background-color: #cdcdcd;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.r_side div input {
+    color: #6c5ce7;
+    font-size: 18px;
+    outline: none;
+    margin-top: 10px;
+    width: 100%;
+    background: transparent;
+    font-family: "Poppins", sans-serif;
+    border: none;
+}
+
+.img__label {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.r_side div textarea {
+    color: #6c5ce7;
+    font-size: 18px;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    margin-top: 9px;
+    background: transparent;
+    resize: none;
+    height: 200px;
+    border: none;
+}
+
+.r_side div input::placeholder,
+.r_side div textarea::placeholder {
+    color: #6c5ce763;
+}
+
+.r_side input[type="submit"] {
+    color: #6c5ce7;
+    cursor: pointer;
+    font-weight: 700;
+    margin-top: 0;
+    width: 100%;
+    background: transparent;
+    font-family: "Poppins", sans-serif;
+}
+
+.user_detail {
+    color: #cbcbcb;
+    margin-top: 20px;
+    background-color: #787878;
+    padding: 16px;
+    width: 98%;
+    font-family: "DM Sans", sans-serif;
+    border-radius: 16px;
+}
+
+.user_detail_with_image {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.user_detail .full_name {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.user_detail .username {
+    font-size: 12px;
+    color: #3e3489;
+}
+
+.user_detail .feat p {
+    font-size: 16px;
+}
+
+.user_detail .feat span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.user_detail .bio p {
+    margin-top: 5px;
+    font-size: 12px;
+    text-align: left;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 850px) {
+    .r_side div {
+        width: 95%;
+    }
+    .r_side div textarea {
+        width: 100%;
+    }
+    .r_side {
+        margin-bottom: 100px;
+        padding: 20px 18px;
+    }
+    .bio p {
+        font-size: 15px;
+    }
+    .l_side {
+        width: 520px;
+        padding: 20px;
+    }
+    .first_row img {
+        width: 150px;
+        height: 150px;
+    }
+    .username {
+        font-size: 22px;
+    }
+    .first_row .name_and_type h1 {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .bio p {
+        font-size: 10px;
+    }
+    .first_row img {
+        width: 100px;
+        height: 100px;
+    }
+    .first_row .name_and_type h1 {
+        font-size: 25px;
+    }
+    .first_row {
+        margin-top: 20px;
+    }
+    .username {
+        font-size: 16px;
+    }
+    .bio {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .r_side div input {
+        font-size: 17px;
+    }
+    .r_side div textarea {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .r_side div h1 {
+        font-size: 18px;
+    }
+    .bio p {
+        font-size: 8px;
+    }
+    .first_row .name_and_type h1 {
+        font-size: 20px;
+        margin-top: 3px;
+    }
+    .first_row {
+        margin-top: 20px;
+    }
+    .username {
+        font-size: 14px;
+    }
+    .bio {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .r_side div input {
+        font-size: 13px;
+    }
+    .r_side div textarea {
+        font-size: 13px;
+    }
+    .img__label {
+        font-size: 14px;
+    }
+}

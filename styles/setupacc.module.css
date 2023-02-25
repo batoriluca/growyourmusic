@@ -1,0 +1,444 @@
+.sc1 {
+  height: 100vh;
+  width: 100vw;
+  background-size: 300% 300%;
+  background-image: linear-gradient(-45deg, #313131 0%, black 100%);
+  animation: backgroundAnm 10s linear infinite;
+  overflow: hidden;
+  overflow-y: hidden;
+}
+
+@keyframes backgroundAnm {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.main_container {
+  width: 80%;
+  position: relative;
+  height: 92vh;
+  margin: auto;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  box-shadow: 1px -12px 14px 7px rgb(255 255 255 / 0%),
+    -2px -3px 20px 5px rgb(255 255 255 / 69%);
+  overflow: hidden;
+  border-radius: 16px;
+  background: rgb(255 255 255 / 36%);
+  display: flex;
+}
+
+/* Here is the nav bar css */
+.navbar_contanier {
+  width: 13%;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar_contanier {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container_navbar .navbar {
+  width: 100%;
+}
+
+/* Here is the sidebar */
+
+.navbar_title {
+  padding: 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar_logo {
+  width: 55px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.76);
+  padding: 4px;
+  margin: auto;
+}
+
+.sidebar_logo .img_logo {
+  width: 50px;
+  height: 40px;
+}
+
+.menu_box {
+  width: 80%;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.sidebar_help_btn .sidebar_icon {
+  box-shadow: inset 0px -1px 0px rgb(255 255 255 / 10%);
+  border-radius: 10px 10px;
+  background: rgba(29, 32, 62, 0.5);
+  padding: 10px 10px;
+  width: 25%;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.sidebar_help_btn .sidebar_icon svg {
+  height: 1em;
+  width: 1em;
+  color: #fff;
+  margin: auto;
+}
+
+.sidebar_help_btn {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+
+/* Here is the main container css */
+.content_contanier {
+  width: 87%;
+}
+
+/* Content container  */
+.status_bar {
+  display: flex;
+  padding: 3px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.greets_to_user {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.container_searchbar {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10.5px 0px;
+}
+
+.searchbox {
+  display: flex;
+  align-items: center;
+  width: 355px;
+  height: 30px;
+  padding: 6px 12px;
+  background: linear-gradient(
+    180deg,
+    rgba(46, 51, 90, 0.3) 0%,
+    rgba(28, 27, 51, 0.3) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+}
+
+.searchbox svg {
+  color: #fff;
+  margin-right: 5px;
+}
+
+.searchInput {
+  border: 0;
+  width: 100px;
+  font-size: 14px;
+  color: #fff;
+  background: transparent;
+  font-weight: 500;
+}
+
+.searchInput::placeholder {
+  color: #fff;
+}
+
+.searchInput:focus {
+  outline: none;
+}
+
+.searchInput:focus-visible {
+  outline: none;
+}
+
+.user_btns {
+  display: flex;
+  margin-left: 10px;
+}
+
+.user_btns svg {
+  width: 30px;
+  height: 30px;
+  color: #fff;
+}
+.profileimg {
+  width: 30px;
+  margin-left: 10px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Here is the post */
+
+.feed_with_user {
+  display: flex;
+}
+
+.feed_posts {
+  height: 100vh;
+  overflow-y: auto;
+  background: #b5b4b485;
+  padding: 15px;
+  width: 65%;
+}
+
+.post {
+  width: 75%;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: #fff;
+  margin-bottom: 24px;
+  border-radius: 10px;
+}
+
+.user_details {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.253);
+}
+
+.post .profileimg {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.post_info .user_name {
+  margin-left: 0px;
+  font-weight: 500;
+  font-size: 14px;
+  margin-right: 6px;
+}
+
+.user_name {
+  margin-left: 10px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.post_info {
+  padding: 10px 20px;
+  width: 95%;
+}
+
+.post_info h3 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 11px;
+}
+.post_cont {
+  text-align: center;
+}
+.post_cont img {
+  width: 300px;
+  height: 300px;
+  max-height: 300px;
+  object-fit: cover;
+  margin: auto;
+  padding: 4px;
+  object-position: center;
+}
+
+.like_btn {
+  border: 1px solid rgb(0, 0, 0);
+  padding: 4px;
+  width: 25px;
+  border-radius: 15px;
+}
+
+.like_btn.liked {
+  border: 1px solid red;
+  background: red;
+}
+
+.like_btn.liked svg {
+  color: white;
+}
+
+.profile_bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 35px;
+  padding: 10px;
+  width: 35%;
+}
+
+.profile_pic img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+}
+
+.user_detail {
+  /* color: #fff; */
+  color: #000;
+  text-align: center;
+  margin-top: 10px;
+  background: rgb(255 255 255 / 36%);
+  padding: 16px;
+  border-radius: 16px;
+}
+.user_detail_with_image {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+.user_detail .full_name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.user_detail .username {
+  font-size: 12px;
+  color: #000;
+}
+.user_detail .feat p {
+  font-size: 16px;
+}
+
+.user_detail .feat span {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.user_detail .bio p {
+  margin-top: 5px;
+  font-size: 10px;
+  text-align: left;
+  font-weight: 400;
+}
+
+.news_card {
+  color: #000;
+  text-align: center;
+  margin-top: 10px;
+  background: rgb(255 255 255 / 36%);
+  padding: 16px;
+  border-radius: 16px;
+}
+
+@media screen and (max-width: 850px) {
+  .main_container {
+    width: 100%;
+    flex-direction: column-reverse;
+    overflow-y: hidden;
+    height: auto;
+    margin: 0;
+    border-radius: 0;
+  }
+  .navbar_contanier {
+    width: 100%;
+  }
+  .content_contanier {
+    width: 100%;
+  }
+  .profile_bar {
+    display: none;
+  }
+  .container_navbar .navbar {
+    width: 100%;
+  }
+  .navbar_title {
+    display: none;
+  }
+  .menu_box ul.menu {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .menu_box {
+    width: 95%;
+    margin-top: 0;
+  }
+  .menu_box .menu a {
+    width: 19%;
+  }
+  .menu_box .menu .menu_li .menu_item {
+    flex-direction: column;
+  }
+  .menu_box .menu .menu_li .menu_item h4 {
+    margin: 0;
+    font-size: 14px;
+  }
+  .searchbox {
+    width: 350px;
+    height: 32px;
+    margin: auto 0;
+    border-radius: 18px;
+  }
+  .feed_posts {
+    height: 100%;
+    width: 100%;
+  }
+  .greets_to_user {
+    display: none;
+  }
+  .sidebar_help_btn {
+    display: none;
+  }
+  .feed_with_user {
+    height: 590px;
+  }
+  .post {
+    width: 60%;
+  }
+  .container_searchbar {
+    justify-content: space-between;
+    width: 100%;
+    padding: 6.5px 0px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .post {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .main_container {
+    width: 100%;
+    background-color: transparent;
+    box-shadow: none;
+    overflow: unset;
+    overflow-x: hidden;
+    margin-left: 0px;
+  }
+
+  .menu_box {
+    width: 100%;
+  }
+
+  .menu_box .menu .menu_li .menu_item svg {
+    height: 1em;
+    width: 1em;
+    margin: 0px;
+  }
+
+  .menu_box .menu .menu_li .menu_item h4 {
+    font-size: 12px;
+    margin: 0;
+  }
+}
