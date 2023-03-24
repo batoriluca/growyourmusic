@@ -29,7 +29,7 @@ export default function Home() {
                   <AiOutlineSearch />
                   <input
                     type="text"
-                    placeholder='Explore'
+                    placeholder='Explorează'
                     className={style.searchInput}
                   />
                 </div>
@@ -50,7 +50,7 @@ export default function Home() {
 
                   <div className={style.product} id="postCreate">
                     <div className={style.img_part}>
-                      <i className="fa-solid fa-arrow-left-long" id="arrowLeft" />
+                      <i className="fa-solid fa-arrow-left-long aoleu" id="arrowLeft" />
                       <div className={style.img1}>
                         <input
                           type="file"
@@ -109,8 +109,30 @@ export default function Home() {
                 </div>
               </div>
               <div className={style.profile_bar}>
-                <div className={style.productdescriptiontextarea}>
-                  <h1>Descrierea produsului</h1>
+                <h2 className={style.titluproduse}>Detalii produs</h2>
+
+                <div className={style.prodinput}>
+                  <h3>Titlul produsului:</h3>
+                  <input type="text" placeholder="Titlul produsului" />
+                </div>
+                <div className={style.prodinput}>
+                  <h3>Preţul produsului:</h3>
+                  <input type="text" placeholder="Preţul produsului" />
+                </div>
+                <div className={style.prodinput}>
+                  <h3>Categoria produsului:</h3>
+                  <select name="" id="">
+                    <option value="None" selected>
+                      --
+                    </option>
+                    <option value="Beats">Beats</option>
+                    <option value="visual">Visual/Artwork</option>
+                    <option value="mixmas">Mix Master</option>
+                    <option value="musicvid">Music Video Edit</option>
+                  </select>
+                </div>
+                <div className={style.prodinput}>
+                  <h3>Descrierea produsului:</h3>
                   <textarea
                     name=""
                     id=""
@@ -120,29 +142,10 @@ export default function Home() {
                     defaultValue={""}
                   />
                 </div>
-                <div className={style.lside}>
-                  <div className={style.prodtitleinput}>
-                    <h1>Titlul produsului</h1>
-                    <input type="text" placeholder="Titlul produsului" />
-                  </div>
-                  <div className={style.prodpriceinput} style={{ marginTop: 10 }}>
-                    <h1>Preţul produsului</h1>
-                    <input type="text" placeholder="Preţul produsului" />
-                  </div>
-                  <div className={style.prodpriceinput} style={{ marginTop: 10 }}>
-                    <h1>Categoria produsului</h1>
-                    <select name="" id="">
-                      <option value="None" selected>
-                        --
-                      </option>
-                      <option value="Beats">Beats</option>
-                      <option value="visual">Visual/Artwork</option>
-                      <option value="mixmas">Mix Master</option>
-                      <option value="musicvid">Music Video Edit</option>
-                    </select>
-                  </div>
+                <div className={style.prodinput}>
                   <input type="submit" defaultValue="Creează produsul" />
                 </div>
+
 
               </div>
             </div>

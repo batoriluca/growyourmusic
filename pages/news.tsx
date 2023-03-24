@@ -44,355 +44,7 @@ export default function Home() {
             <div className={style.feed_with_user}>
               <div className={style.feed_posts}>
                 <div className={style.dm}>
-                  <div className={style.l_side}>
 
-                    <div className={style.notifications_card}>
-                      <h1>Notificări</h1>
-                      <div className={`${style.notification} ${style.volume_text}`}>
-                        <div className={style.p1}>
-                          <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
-                          <p className={style.notif_username}>
-                            <b>
-                              <Link href="userprofile">loremipsum</Link>
-                            </b>
-                          </p>
-                          <p>
-                            <Link href="userprofile">vrea să măreşti volumul!</Link>
-                          </p>
-                        </div>
-                        <p className={style.post_thumbnail}>
-                          <b>
-                            <Link href="txtpost">("loremips ...")</Link>
-                          </b>
-                        </p>
-                      </div>
-                      <div className={`${style.notification} ${style.volume_vid}`}>
-                        <div className={style.p1}>
-                          <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
-                          <p className={style.notif_username}>
-                            <b>
-                              <Link href="userprofile">loremipsum</Link>
-                            </b>
-                          </p>
-                          <p>vrea să măreşti volumul!</p>
-                        </div>
-                        <Link href="/vidpost" className={style.post_thumbnail}>
-                          <video
-                            controlsList="nodownload"
-                            disablePictureInPicture={true}
-                            className={style.fixed_aspect_ratio}
-                          >
-                            <source src="/img/Pop Cola 2021 feat. ABI.mp4" />
-                          </video>
-                        </Link>
-                      </div>
-                      <div className={`${style.notification} ${style.fan}`}>
-                        <div className={style.p1}>
-                          <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
-                          <p className={style.notif_username}>
-                            <b>
-                              <Link href="userprofile">loremipsum</Link>
-                            </b>
-                          </p>
-                          <p>te urmăreşte!</p>
-                        </div>
-                      </div>
-                      <div className={`${style.notification} ${style.feat}`}>
-                        <div className={style.p1}>
-                          <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
-                          <p className={style.notif_username}>
-                            <b>
-                              <Link href="userprofile">loremipsum</Link>
-                            </b>
-                          </p>
-                          <p>vrea să colaboraţi!</p>
-                        </div>
-                        <p className={style.post_thumbnail}>
-                          <b>
-                            <Link href="chat">Colaborează!</Link>
-                          </b>
-                        </p>
-                      </div>
-                      <div className={`${style.notification} ${style.joined}`}>
-                        <div className={style.p1}>
-                          <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
-                          <p className={style.notif_username}>
-                            <b>
-                              <Link href="userprofile">loremipsum</Link>
-                            </b>
-                          </p>
-                          <p>s-a alăturat!</p>
-                        </div>
-                        <p className={style.post_thumbnail}>
-                          <b>
-                            <Link href="userprofile">Vezi contul!</Link>
-                          </b>
-                        </p>
-                      </div>
-                      <div className={`${style.notification} ${style.volume_text}`}>
-                        <div className={style.p1}>
-                          <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
-                          <p className={style.notif_username}>
-                            <b>
-                              <Link href="userprofile">loremipsum</Link>
-                            </b>
-                          </p>
-                          <p>
-                            <Link href="txtpost">vrea să măreşti volumul!</Link>
-                          </p>
-                        </div>
-                        <p className={style.post_thumbnail}>
-                          <b>
-                            <Link href="txtpost">("loremips ...")</Link>
-                          </b>
-                        </p>
-                      </div>
-                      <div className={`${style.notification} ${style.volume_vid}`}>
-                        <div className={style.p1}>
-                          <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
-                          <p className={style.notif_username}>
-                            <b>
-                              <Link href="userprofile">loremipsum</Link>
-                            </b>
-                          </p>
-                          <p>vrea să măreşti volumul!</p>
-                        </div>
-                        <Link href="/vidpost" className={style.post_thumbnail}>
-                          <video
-                            preload="auto"
-                            controlsList="nodownload"
-                            disablePictureInPicture={true}
-                            className={style.fixed_aspect_ratio}
-                          >
-                            <source src="/img/Pop Cola 2021 feat. ABI.mp4" />
-                          </video>
-                        </Link>
-                      </div>
-                      <div className={`${style.notification} ${style.fan}`}>
-                        <div className={style.p1}>
-                          <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
-                          <p className={style.notif_username}>
-                            <b>
-                              <Link href="userprofile">loremipsum</Link>
-                            </b>
-                          </p>
-                          <p>
-                            <Link href="userprofile">te urmăreşte!</Link>
-                          </p>
-                        </div>
-                      </div>
-                      <div className={`${style.notification} ${style.feat}`}>
-                        <div className={style.p1}>
-                          <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
-                          <p className={style.notif_username}>
-                            <b>
-                              <Link href="userprofile">loremipsum</Link>
-                            </b>
-                          </p>
-                          <p>vrea să colaboraţi!</p>
-                        </div>
-                        <p className={style.post_thumbnail}>
-                          <b>
-                            <Link href="chat">Colaborează!</Link>
-                          </b>
-                        </p>
-                      </div>
-                      <div className={`${style.notification} ${style.contract_accept}`}>
-                        <div className={style.p1}>
-                          <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
-                          <p className={style.notif_username}>
-                            <b>
-                              <Link href="userprofile">loremipsum</Link>
-                            </b>
-                          </p>
-                          <p>a acceptat oferta!</p>
-                        </div>
-                        <p className={style.post_thumbnail}>
-                          <b>
-                            <Link href="productws">Vezi contractul</Link>
-                          </b>
-                        </p>
-                      </div>
-                      <div className={`${style.notification} ${style.contract_reject}`}>
-                        <div className={style.p1}>
-                          <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
-                          <p className={style.notif_username}>
-                            <b>
-                              <Link href="userprofile">loremipsum</Link>
-                            </b>
-                          </p>
-                          <p>a refuzat oferta!</p>
-                        </div>
-                        <p className={style.post_thumbnail}>
-                          <b>
-                            <Link href="chat">Vezi contractul</Link>
-                          </b>
-                        </p>
-                      </div>
-                      <div className={`${style.notification} ${style.contract_expired}`}>
-                        <div className={style.p1}>
-                          <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
-                          <p className={style.notif_username}>
-                            <b>
-                              <Link href="userprofile">loremipsum</Link>
-                            </b>
-                          </p>
-                          <p>nu a răspuns ofertei!</p>
-                        </div>
-                        <p className={style.post_thumbnail}>
-                          <b>
-                            <Link href="chat">Vezi contractul</Link>
-                          </b>
-                        </p>
-                      </div>
-                      <div className={`${style.notification} ${style.prod_sent}`}>
-                        <div className={style.p1}>
-                          <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
-                          <p className={style.notif_username}>
-                            <b>
-                              <Link href="userprofile">loremipsum</Link>
-                            </b>
-                          </p>
-                          <p>a trimis un produs!</p>
-                        </div>
-                        <p className={style.post_thumbnail}>
-                          <b>
-                            <Link href="review">Vezi produsul</Link>
-                          </b>
-                        </p>
-                      </div>
-                      <div className={`${style.notification} ${style.review}`}>
-                        <div className={style.p1}>
-                          <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
-                          <p className={style.notif_username}>
-                            <b>
-                              <Link href="userprofile">loremipsum</Link>
-                            </b>
-                          </p>
-                          <p>și-a dat părerea despre produs!</p>
-                        </div>
-                        <p className={style.post_thumbnail}>
-                          <b>
-                            <Link href="chat">Vezi produsul</Link>
-                          </b>
-                        </p>
-                      </div>
-                      <div className={`${style.notification} ${style.feat}`}>
-                        <div className={style.p1}>
-                          <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
-                          <p className={style.notif_username}>
-                            <b>
-                              <Link href="userprofile">loremipsum</Link>
-                            </b>
-                          </p>
-                          <p>vrea să colaboraţi!</p>
-                        </div>
-                        <p className={style.post_thumbnail}>
-                          <b>
-                            <Link href="chat">Colaborează!</Link>
-                          </b>
-                        </p>
-                      </div>
-                      <div className={`${style.notification} ${style.joined}`}>
-                        <div className={style.p1}>
-                          <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
-                          <p className={style.notif_username}>
-                            <b>
-                              <Link href="userprofile">loremipsum</Link>
-                            </b>
-                          </p>
-                          <p>s-a alăturat!</p>
-                        </div>
-                        <p className={style.post_thumbnail}>
-                          <b>
-                            <Link href="userprofile">Vezi contul!</Link>
-                          </b>
-                        </p>
-                      </div>
-                      <div className={`${style.notification} ${style.volume_text}`}>
-                        <div className={style.p1}>
-                          <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
-                          <p className={style.notif_username}>
-                            <b>
-                              <Link href="userprofile">loremipsum</Link>
-                            </b>
-                          </p>
-                          <p>
-                            <Link href="userprofile">vrea să măreşti volumul!</Link>
-                          </p>
-                        </div>
-                        <p className={style.post_thumbnail}>
-                          <b>
-                            <Link href="txtpost">("loremips ...")</Link>
-                          </b>
-                        </p>
-                      </div>
-                      <div className={`${style.notification} ${style.volume_vid}`}>
-                        <div className={style.p1}>
-                          <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
-                          <p className={style.notif_username}>
-                            <b>
-                              <Link href="userprofile">loremipsum</Link>
-                            </b>
-                          </p>
-                          <p>vrea să măreşti volumul!</p>
-                        </div>
-                        <Link href="/vidpost" className={style.post_thumbnail}>
-                          <video
-                            preload="auto"
-                            controlsList="nodownload"
-                            disablePictureInPicture={true}
-                            className={style.fixed_aspect_ratio}
-                          >
-                            <source src="/img/Pop Cola 2021 feat. ABI.mp4" />
-                          </video>
-                        </Link>
-                      </div>
-                      <div className={`${style.notification} ${style.fan}`}>
-                        <div className={style.p1}>
-                          <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
-                          <p className={style.notif_username}>
-                            <b>
-                              <Link href="userprofile">loremipsum</Link>
-                            </b>
-                          </p>
-                          <p>te urmăreşte!</p>
-                        </div>
-                      </div>
-                      <div className={`${style.notification} ${style.feat}`}>
-                        <div className={style.p1}>
-                          <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
-                          <p className={style.notif_username}>
-                            <b>
-                              <Link href="userprofile">loremipsum</Link>
-                            </b>
-                          </p>
-                          <p>vrea să colaboraţi!</p>
-                        </div>
-                        <p className={style.post_thumbnail}>
-                          <b>
-                            <Link href="chat">Colaborează!</Link>
-                          </b>
-                        </p>
-                      </div>
-                      <div className={`${style.notification} ${style.joined}`}>
-                        <div className={style.p1}>
-                          <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
-                          <p className={style.notif_username}>
-                            <b>
-                              <Link href="userprofile">loremipsum</Link>
-                            </b>
-                          </p>
-                          <p>s-a alăturat!</p>
-                        </div>
-                        <p className={style.post_thumbnail}>
-                          <b>
-                            <Link href="userprofile">Vezi contul!</Link>
-                          </b>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
                   <div className={style.r_side}>
                     <div className={style.monthly_cards}>
                       <div className={style.artistofthemonth}>
@@ -407,7 +59,7 @@ export default function Home() {
                       <div className={style.sellerofthemonth}>
                         <img src="/img/osky1.jpg" className={style.profileimg} alt="" />
                         <div className={style.blok}>
-                          <h2>VÂNZĂTORUL LUNII!</h2>
+                          <h2>PRODUCĂTORUL LUNII!</h2>
                           <h3>
                             <Link href="userprofile">LOREM123</Link>
                           </h3>
@@ -445,151 +97,396 @@ export default function Home() {
               <div className={style.profile_bar}>
 
                 <div className={style.frow}>
-                  <h5>Listă Contracte</h5>
-                  <Link
-                    href="/chat"
-                    style={{
-                      width: 180,
-                      borderRadius: "5px",
-                      cursor: "pointer",
-                      display: "flex",
-                      padding: "10px ",
-                      color: "white",
-                      backgroundColor: "#6657DA"
-                    }}
-                  >
-                    <h4 style={{ fontSize: 14 }}>Verifică-ți mesajele</h4>
-                    <i
-                      className="fa-solid fa-arrow-right-long"
-                      style={{ marginLeft: 145, marginTop: 3 }}
-                    />
+                  <h5>Notificări</h5>
+
+                </div>
+                <div className={`${style.notification} ${style.volume_text}`}>
+                  <div className={style.p1}>
+                    <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
+                    <div className={style.notification_content}>
+                      <p className={style.notif_username}>
+                        <b>
+                          <Link href="userprofile">loremipsum</Link>
+                        </b>
+                      </p>
+                      <p className={style.notif_text}>
+                        vrea să măreşti volumul!
+                      </p>
+                    </div>
+                  </div>
+                  <p className={style.post_thumbnail}>
+                    <b>
+                      <Link href="txtpost">("loremips ...")</Link>
+                    </b>
+                  </p>
+                </div>
+                <div className={`${style.notification} ${style.volume_vid}`}>
+                  <div className={style.p1}>
+                    <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
+                    <div className={style.notification_content}>
+                      <p className={style.notif_username}>
+                        <b>
+                          <Link href="userprofile">loremipsum</Link>
+                        </b>
+                      </p>
+                      <p className={style.notif_text}>vrea să măreşti volumul!</p>
+                    </div>
+                  </div>
+                  <Link href="/vidpost" className={style.post_thumbnail}>
+                    <video
+                      controlsList="nodownload"
+                      disablePictureInPicture={true}
+                      className={style.fixed_aspect_ratio}
+                    >
+                      <source src="/img/Pop Cola 2021 feat. ABI.mp4" />
+                    </video>
                   </Link>
                 </div>
-                <ul>
-                  <Link href="#">
-                    <li className={`${style.get} ${style.notif}`}>
-                      <img src="/img/osky1.jpg" alt="" className={style.profileImg} />
-                      <div className={style.message}>
-                        <h1 className={style.artistname}>LOREM123</h1>
-                        <p>contract primit</p>
-                      </div>
-                    </li>
+                <div className={`${style.notification} ${style.fan}`}>
+                  <div className={style.p1}>
+                    <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
+                    <div className={style.notification_content}>
+                      <p className={style.notif_username}>
+                        <b>
+                          <Link href="userprofile">loremipsum</Link>
+                        </b>
+                      </p>
+                      <p className={style.notif_text}>te urmăreşte!</p>
+                    </div>
+                  </div>
+                </div>
+                <div className={`${style.notification} ${style.feat}`}>
+                  <div className={style.p1}>
+                    <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
+                    <div className={style.notification_content}>
+                      <p className={style.notif_username}>
+                        <b>
+                          <Link href="userprofile">loremipsum</Link>
+                        </b>
+                      </p>
+                      <p className={style.notif_text}>vrea să colaboraţi!</p>
+                    </div>
+                  </div>
+                  <p className={style.post_thumbnail}>
+                    <b>
+                      <Link href="chat">Colaborează!</Link>
+                    </b>
+                  </p>
+                </div>
+                <div className={`${style.notification} ${style.joined}`}>
+                  <div className={style.p1}>
+                    <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
+                    <div className={style.notification_content}>
+                      <p className={style.notif_username}>
+                        <b>
+                          <Link href="userprofile">loremipsum</Link>
+                        </b>
+                      </p>
+                      <p className={style.notif_text}>s-a alăturat!</p>
+                    </div>
+                  </div>
+                  <p className={style.post_thumbnail}>
+                    <b>
+                      <Link href="userprofile">Vezi contul!</Link>
+                    </b>
+                  </p>
+                </div>
+                <div className={`${style.notification} ${style.volume_text}`}>
+                  <div className={style.p1}>
+                    <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
+                    <div className={style.notification_content}>
+                      <p className={style.notif_username}>
+                        <b>
+                          <Link href="userprofile">loremipsum</Link>
+                        </b>
+                      </p>
+                      <p className={style.notif_text}>
+                        vrea să măreşti volumul!
+                      </p>
+                    </div>
+                  </div>
+                  <p className={style.post_thumbnail}>
+                    <b>
+                      <Link href="txtpost">("loremips ...")</Link>
+                    </b>
+                  </p>
+                </div>
+                <div className={`${style.notification} ${style.volume_vid}`}>
+                  <div className={style.p1}>
+                    <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
+                    <div className={style.notification_content}>
+                      <p className={style.notif_username}>
+                        <b>
+                          <Link href="userprofile">loremipsum</Link>
+                        </b>
+                      </p>
+                      <p className={style.notif_text}>vrea să măreşti volumul!</p>
+                    </div>
+                  </div>
+                  <Link href="/vidpost" className={style.post_thumbnail}>
+                    <video
+                      preload="auto"
+                      controlsList="nodownload"
+                      disablePictureInPicture={true}
+                      className={style.fixed_aspect_ratio}
+                    >
+                      <source src="/img/Pop Cola 2021 feat. ABI.mp4" />
+                    </video>
                   </Link>
-
-                  <li className={style.send}>
-                    <img src="/img/osky1.jpg" alt="" className={style.profileImg} />
-                    <div className={style.message}>
-                      <h1 className={style.artistname}>LOREM123</h1>
-                      <p>contract trimis</p>
+                </div>
+                <div className={`${style.notification} ${style.fan}`}>
+                  <div className={style.p1}>
+                    <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
+                    <div className={style.notification_content}>
+                      <p className={style.notif_username}>
+                        <b>
+                          <Link href="userprofile">loremipsum</Link>
+                        </b>
+                      </p>
+                      <p className={style.notif_text}>
+                        te urmăreşte!
+                      </p>
                     </div>
-                  </li>
-
-                  <li className={style.send}>
-                    <img src="/img/osky1.jpg" alt="" className={style.profileImg} />
-                    <div className={style.message}>
-                      <h1 className={style.artistname}>LOREM123</h1>
-                      <p>contract trimis</p>
+                  </div>
+                </div>
+                <div className={`${style.notification} ${style.feat}`}>
+                  <div className={style.p1}>
+                    <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
+                    <div className={style.notification_content}>
+                      <p className={style.notif_username}>
+                        <b>
+                          <Link href="userprofile">loremipsum</Link>
+                        </b>
+                      </p>
+                      <p className={style.notif_text}>vrea să colaboraţi!</p>
                     </div>
-                  </li>
-                  <Link href="#">
-                    <li className={`${style.get} ${style.notif}`}>
-                      <img src="/img/osky1.jpg" alt="" className={style.profileImg} />
-                      <div className={style.message}>
-                        <h1 className={style.artistname}>LOREM123</h1>
-                        <p>contract primit</p>
-                      </div>
-                    </li>
+                  </div>
+                  <p className={style.post_thumbnail}>
+                    <b>
+                      <Link href="chat">Colaborează!</Link>
+                    </b>
+                  </p>
+                </div>
+                <div className={`${style.notification} ${style.contract_accept}`}>
+                  <div className={style.p1}>
+                    <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
+                    <div className={style.notification_content}>
+                      <p className={style.notif_username}>
+                        <b>
+                          <Link href="userprofile">loremipsum</Link>
+                        </b>
+                      </p>
+                      <p className={style.notif_text}>a acceptat oferta!</p>
+                    </div>
+                  </div>
+                  <p className={style.post_thumbnail}>
+                    <b>
+                      <Link href="productws">Vezi contractul</Link>
+                    </b>
+                  </p>
+                </div>
+                <div className={`${style.notification} ${style.contract_reject}`}>
+                  <div className={style.p1}>
+                    <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
+                    <div className={style.notification_content}>
+                      <p className={style.notif_username}>
+                        <b>
+                          <Link href="userprofile">loremipsum</Link>
+                        </b>
+                      </p>
+                      <p className={style.notif_text}>a refuzat oferta!</p>
+                    </div>
+                  </div>
+                  <p className={style.post_thumbnail}>
+                    <b>
+                      <Link href="chat">Vezi contractul</Link>
+                    </b>
+                  </p>
+                </div>
+                <div className={`${style.notification} ${style.contract_expired}`}>
+                  <div className={style.p1}>
+                    <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
+                    <div className={style.notification_content}>
+                      <p className={style.notif_username}>
+                        <b>
+                          <Link href="userprofile">loremipsum</Link>
+                        </b>
+                      </p>
+                      <p className={style.notif_text}>nu a răspuns ofertei!</p>
+                    </div>
+                  </div>
+                  <p className={style.post_thumbnail}>
+                    <b>
+                      <Link href="chat">Vezi contractul</Link>
+                    </b>
+                  </p>
+                </div>
+                <div className={`${style.notification} ${style.prod_sent}`}>
+                  <div className={style.p1}>
+                    <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
+                    <div className={style.notification_content}>
+                      <p className={style.notif_username}>
+                        <b>
+                          <Link href="userprofile">loremipsum</Link>
+                        </b>
+                      </p>
+                      <p className={style.notif_text}>a trimis un produs!</p>
+
+                    </div>
+                  </div>
+                  <p className={style.post_thumbnail}>
+                    <b>
+                      <Link href="review">Vezi produsul</Link>
+                    </b>
+                  </p>
+                </div>
+                <div className={`${style.notification} ${style.review}`}>
+                  <div className={style.p1}>
+                    <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
+
+                    <div className={style.notification_content}>
+                      <p className={style.notif_username}>
+                        <b>
+                          <Link href="userprofile">loremipsum</Link>
+                        </b>
+                      </p>
+                      <p className={style.notif_text}>și-a dat părerea despre produs!</p>
+                    </div>
+                  </div>
+                  <p className={style.post_thumbnail}>
+                    <b>
+                      <Link href="chat">Vezi produsul</Link>
+                    </b>
+                  </p>
+                </div>
+                <div className={`${style.notification} ${style.feat}`}>
+                  <div className={style.p1}>
+                    <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
+                    <div className={style.notification_content}>
+                      <p className={style.notif_username}>
+                        <b>
+                          <Link href="userprofile">loremipsum</Link>
+                        </b>
+                      </p>
+                      <p className={style.notif_text}>vrea să colaboraţi!</p>
+                    </div>
+                  </div>
+                  <p className={style.post_thumbnail}>
+                    <b>
+                      <Link href="chat">Colaborează!</Link>
+                    </b>
+                  </p>
+                </div>
+                <div className={`${style.notification} ${style.joined}`}>
+                  <div className={style.p1}>
+                    <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
+                    <div className={style.notification_content}>
+                      <p className={style.notif_username}>
+                        <b>
+                          <Link href="userprofile">loremipsum</Link>
+                        </b>
+                      </p>
+                      <p className={style.notif_text}>s-a alăturat!</p>
+                    </div>
+                  </div>
+                  <p className={style.post_thumbnail}>
+                    <b>
+                      <Link href="userprofile">Vezi contul!</Link>
+                    </b>
+                  </p>
+                </div>
+                <div className={`${style.notification} ${style.volume_text}`}>
+                  <div className={style.p1}>
+                    <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
+                    <div className={style.notification_content}>
+                      <p className={style.notif_username}>
+                        <b>
+                          <Link href="userprofile">loremipsum</Link>
+                        </b>
+                      </p>
+                      <p className={style.notif_text}>
+                        vrea să măreşti volumul!
+                      </p>
+                    </div>
+                  </div>
+                  <p className={style.post_thumbnail}>
+                    <b>
+                      <Link href="txtpost">("loremips ...")</Link>
+                    </b>
+                  </p>
+                </div>
+                <div className={`${style.notification} ${style.volume_vid}`}>
+                  <div className={style.p1}>
+                    <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
+                    <div className={style.notification_content}>
+                      <p className={style.notif_username}>
+                        <b>
+                          <Link href="userprofile">loremipsum</Link>
+                        </b>
+                      </p>
+                      <p className={style.notif_text}>vrea să măreşti volumul!</p>
+                    </div>
+                  </div>
+                  <Link href="/vidpost" className={style.post_thumbnail}>
+                    <video
+                      preload="auto"
+                      controlsList="nodownload"
+                      disablePictureInPicture={true}
+                      className={style.fixed_aspect_ratio}
+                    >
+                      <source src="/img/Pop Cola 2021 feat. ABI.mp4" />
+                    </video>
                   </Link>
-                  <li className={style.send}>
-                    <img src="/img/osky1.jpg" alt="" className={style.profileImg} />
-                    <div className={style.message}>
-                      <h1 className={style.artistname}>LOREM123</h1>
-                      <p>contract trimis</p>
+                </div>
+                <div className={`${style.notification} ${style.fan}`}>
+                  <div className={style.p1}>
+                    <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
+                    <div className={style.notification_content}>
+                      <p className={style.notif_username}>
+                        <b>
+                          <Link href="userprofile">loremipsum</Link>
+                        </b>
+                      </p>
+                      <p className={style.notif_text}>te urmăreşte!</p>
                     </div>
-                  </li>
-                  <Link href="#">
-                    <li className={`${style.get} ${style.notif}`}>
-                      <img src="/img/osky1.jpg" alt="" className={style.profileImg} />
-                      <div className={style.message}>
-                        <h1 className={style.artistname}>LOREM123</h1>
-                        <p>contract primit</p>
-                      </div>
-                    </li>
-                  </Link>
-
-                  <li className={style.send}>
-                    <img src="/img/osky1.jpg" alt="" className={style.profileImg} />
-                    <div className={style.message}>
-                      <h1 className={style.artistname}>LOREM123</h1>
-                      <p>contract trimis</p>
+                  </div>
+                </div>
+                <div className={`${style.notification} ${style.feat}`}>
+                  <div className={style.p1}>
+                    <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
+                    <div className={style.notification_content}>
+                      <p className={style.notif_username}>
+                        <b>
+                          <Link href="userprofile">loremipsum</Link>
+                        </b>
+                      </p>
+                      <p className={style.notif_text}>vrea să colaboraţi!</p>
                     </div>
-                  </li>
-
-                  <li className={style.send}>
-                    <img src="/img/osky1.jpg" alt="" className={style.profileImg} />
-                    <div className={style.message}>
-                      <h1 className={style.artistname}>LOREM123</h1>
-                      <p>contract trimis</p>
+                  </div>
+                  <p className={style.post_thumbnail}>
+                    <b>
+                      <Link href="chat">Colaborează!</Link>
+                    </b>
+                  </p>
+                </div>
+                <div className={`${style.notification} ${style.joined}`}>
+                  <div className={style.p1}>
+                    <img src="/img/osky1.jpg" alt="" className={style.profileimg} />
+                    <div className={style.notification_content}>
+                      <p className={style.notif_username}>
+                        <b>
+                          <Link href="userprofile">loremipsum</Link>
+                        </b>
+                      </p>
+                      <p className={style.notif_text}>s-a alăturat!</p>
                     </div>
-                  </li>
-                  <Link href="#">
-                    <li className={`${style.get} ${style.notif}`}>
-                      <img src="/img/osky1.jpg" alt="" className={style.profileImg} />
-                      <div className={style.message}>
-                        <h1 className={style.artistname}>LOREM123</h1>
-                        <p>contract primit</p>
-                      </div>
-                    </li>
-                  </Link>
-                  <li className={style.send}>
-                    <img src="/img/osky1.jpg" alt="" className={style.profileImg} />
-                    <div className={style.message}>
-                      <h1 className={style.artistname}>LOREM123</h1>
-                      <p>contract trimis</p>
-                    </div>
-                  </li>
-                  <Link href="#">
-                    <li className={`${style.get} ${style.notif}`}>
-                      <img src="/img/osky1.jpg" alt="" className={style.profileImg} />
-                      <div className={style.message}>
-                        <h1 className={style.artistname}>LOREM123</h1>
-                        <p>contract primit</p>
-                      </div>
-                    </li>
-                  </Link>
-
-                  <li className={style.send}>
-                    <img src="/img/osky1.jpg" alt="" className={style.profileImg} />
-                    <div className={style.message}>
-                      <h1 className={style.artistname}>LOREM123</h1>
-                      <p>contract trimis</p>
-                    </div>
-                  </li>
-
-                  <li className={style.send}>
-                    <img src="/img/osky1.jpg" alt="" className={style.profileImg} />
-                    <div className={style.message}>
-                      <h1 className={style.artistname}>LOREM123</h1>
-                      <p>contract trimis</p>
-                    </div>
-                  </li>
-                  <Link href="#">
-                    <li className={`${style.get} ${style.notif}`}>
-                      <img src="/img/osky1.jpg" alt="" className={style.profileImg} />
-                      <div className={style.message}>
-                        <h1 className={style.artistname}>LOREM123</h1>
-                        <p>contract primit</p>
-                      </div>
-                    </li>
-                  </Link>
-                  <li className={style.send}>
-                    <img src="/img/osky1.jpg" alt="" className={style.profileImg} />
-                    <div className={style.message}>
-                      <h1 className={style.artistname}>LOREM123</h1>
-                      <p>contract trimis</p>
-                    </div>
-                  </li>
-                </ul>
+                  </div>
+                  <p className={style.post_thumbnail}>
+                    <b>
+                      <Link href="userprofile">Vezi contul!</Link>
+                    </b>
+                  </p>
+                </div>
 
               </div>
             </div>

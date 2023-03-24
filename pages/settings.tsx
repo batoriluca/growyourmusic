@@ -93,97 +93,7 @@ export default function Home() {
                       <input type="submit" defaultValue="Trimite" />
                     </div>
                   </div>
-                  <div className={style.r_side}>
-                    <div className={`${style.card} ${style.faq}`}>
-                      <h1 className={style.card_title}>FAQ</h1>
-                      <div className={style.q1}>
-                        <h1>1. How do I create an account?</h1>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
-                          molestiae dolore veniam, repudiandae recusandae saepe quidem est illum
-                          necessitatibus eveniet. Eveniet enim in obcaecati fuga ipsum, ratione
-                          reiciendis eaque sapiente!
-                        </p>
-                      </div>
-                      <div className={style.q1}>
-                        <h1>1. How do I create an account?</h1>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
-                          molestiae dolore veniam, repudiandae recusandae saepe quidem est illum
-                          necessitatibus eveniet. Eveniet enim in obcaecati fuga ipsum, ratione
-                          reiciendis eaque sapiente!
-                        </p>
-                      </div>
-                      <div className={style.q1}>
-                        <h1>1. How do I create an account?</h1>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
-                          molestiae dolore veniam, repudiandae recusandae saepe quidem est illum
-                          necessitatibus eveniet. Eveniet enim in obcaecati fuga ipsum, ratione
-                          reiciendis eaque sapiente!
-                        </p>
-                      </div>
-                      <div className={style.q1}>
-                        <h1>1. How do I create an account?</h1>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
-                          molestiae dolore veniam, repudiandae recusandae saepe quidem est illum
-                          necessitatibus eveniet. Eveniet enim in obcaecati fuga ipsum, ratione
-                          reiciendis eaque sapiente!
-                        </p>
-                      </div>
-                      <div className={style.q1}>
-                        <h1>1. How do I create an account?</h1>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
-                          molestiae dolore veniam, repudiandae recusandae saepe quidem est illum
-                          necessitatibus eveniet. Eveniet enim in obcaecati fuga ipsum, ratione
-                          reiciendis eaque sapiente!
-                        </p>
-                      </div>
-                      <div className={style.q1}>
-                        <h1>1. How do I create an account?</h1>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
-                          molestiae dolore veniam, repudiandae recusandae saepe quidem est illum
-                          necessitatibus eveniet. Eveniet enim in obcaecati fuga ipsum, ratione
-                          reiciendis eaque sapiente!
-                        </p>
-                      </div>
-                      <div className={style.q1}>
-                        <h1>1. How do I create an account?</h1>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
-                          molestiae dolore veniam, repudiandae recusandae saepe quidem est illum
-                          necessitatibus eveniet. Eveniet enim in obcaecati fuga ipsum, ratione
-                          reiciendis eaque sapiente!
-                        </p>
-                      </div>
-                      <div className={style.q1}>
-                        <h1>1. How do I create an account?</h1>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
-                          molestiae dolore veniam, repudiandae recusandae saepe quidem est illum
-                          necessitatibus eveniet. Eveniet enim in obcaecati fuga ipsum, ratione
-                          reiciendis eaque sapiente!
-                        </p>
-                      </div>
-                      <div className={style.q1}>
-                        <h1>1. How do I create an account?</h1>
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
-                          molestiae dolore veniam, repudiandae recusandae saepe quidem est illum
-                          necessitatibus eveniet. Eveniet enim in obcaecati fuga ipsum, ratione
-                          reiciendis eaque sapiente!
-                        </p>
-                      </div>
-                    </div>
-                    <h1 className={style.sure}>Eşti sigur?</h1>
-                    <div className={style.delete_acc}>
-                      <button id="logout">Deconectaţi-vă</button>
-                      <button id="delacc">Şterge contul</button>
-                    </div>
-                  </div>
+
                 </div>
               </div>
               <div className={style.profile_bar}>
@@ -209,49 +119,98 @@ export default function Home() {
                     />
                   </Link>
                 </div>
-                <ul>
-                  <Link href="#">
-                    <li className={`${style.get} ${style.notif}`}>
-                      <img src="/img/osky1.jpg" alt="" className={style.profileImg} />
-                      <div className={style.message}>
-                        <h1 className={style.artistname}>LOREM123</h1>
-                        <p>contract primit</p>
-                      </div>
-                    </li>
-                  </Link>
+                <div className={`${style.card} ${style.faq}`}>
+                  <h1 className={style.card_title}>FAQ</h1>
+                  <div className={style.q1}>
+                    <h1>1. How do I create an account?</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+                      molestiae dolore veniam, repudiandae recusandae saepe quidem est illum
+                      necessitatibus eveniet. Eveniet enim in obcaecati fuga ipsum, ratione
+                      reiciendis eaque sapiente!
+                    </p>
+                  </div>
+                  <div className={style.q1}>
+                    <h1>1. How do I create an account?</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+                      molestiae dolore veniam, repudiandae recusandae saepe quidem est illum
+                      necessitatibus eveniet. Eveniet enim in obcaecati fuga ipsum, ratione
+                      reiciendis eaque sapiente!
+                    </p>
+                  </div>
+                  <div className={style.q1}>
+                    <h1>1. How do I create an account?</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+                      molestiae dolore veniam, repudiandae recusandae saepe quidem est illum
+                      necessitatibus eveniet. Eveniet enim in obcaecati fuga ipsum, ratione
+                      reiciendis eaque sapiente!
+                    </p>
+                  </div>
+                  <div className={style.q1}>
+                    <h1>1. How do I create an account?</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+                      molestiae dolore veniam, repudiandae recusandae saepe quidem est illum
+                      necessitatibus eveniet. Eveniet enim in obcaecati fuga ipsum, ratione
+                      reiciendis eaque sapiente!
+                    </p>
+                  </div>
+                  <div className={style.q1}>
+                    <h1>1. How do I create an account?</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+                      molestiae dolore veniam, repudiandae recusandae saepe quidem est illum
+                      necessitatibus eveniet. Eveniet enim in obcaecati fuga ipsum, ratione
+                      reiciendis eaque sapiente!
+                    </p>
+                  </div>
+                  <div className={style.q1}>
+                    <h1>1. How do I create an account?</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+                      molestiae dolore veniam, repudiandae recusandae saepe quidem est illum
+                      necessitatibus eveniet. Eveniet enim in obcaecati fuga ipsum, ratione
+                      reiciendis eaque sapiente!
+                    </p>
+                  </div>
+                  <div className={style.q1}>
+                    <h1>1. How do I create an account?</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+                      molestiae dolore veniam, repudiandae recusandae saepe quidem est illum
+                      necessitatibus eveniet. Eveniet enim in obcaecati fuga ipsum, ratione
+                      reiciendis eaque sapiente!
+                    </p>
+                  </div>
+                  <div className={style.q1}>
+                    <h1>1. How do I create an account?</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+                      molestiae dolore veniam, repudiandae recusandae saepe quidem est illum
+                      necessitatibus eveniet. Eveniet enim in obcaecati fuga ipsum, ratione
+                      reiciendis eaque sapiente!
+                    </p>
+                  </div>
+                  <div className={style.q1}>
+                    <h1>1. How do I create an account?</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+                      molestiae dolore veniam, repudiandae recusandae saepe quidem est illum
+                      necessitatibus eveniet. Eveniet enim in obcaecati fuga ipsum, ratione
+                      reiciendis eaque sapiente!
+                    </p>
+                  </div>
+                </div>
+                <div className={style.r_side}>
 
-                  <li className={style.send}>
-                    <img src="/img/osky1.jpg" alt="" className={style.profileImg} />
-                    <div className={style.message}>
-                      <h1 className={style.artistname}>LOREM123</h1>
-                      <p>contract trimis</p>
-                    </div>
-                  </li>
-
-                  <li className={style.send}>
-                    <img src="/img/osky1.jpg" alt="" className={style.profileImg} />
-                    <div className={style.message}>
-                      <h1 className={style.artistname}>LOREM123</h1>
-                      <p>contract trimis</p>
-                    </div>
-                  </li>
-                  <Link href="#">
-                    <li className={`${style.get} ${style.notif}`}>
-                      <img src="/img/osky1.jpg" alt="" className={style.profileImg} />
-                      <div className={style.message}>
-                        <h1 className={style.artistname}>LOREM123</h1>
-                        <p>contract primit</p>
-                      </div>
-                    </li>
-                  </Link>
-                  <li className={style.send}>
-                    <img src="/img/osky1.jpg" alt="" className={style.profileImg} />
-                    <div className={style.message}>
-                      <h1 className={style.artistname}>LOREM123</h1>
-                      <p>contract trimis</p>
-                    </div>
-                  </li>
-                </ul>
+                  <h1 className={style.sure}>Eşti sigur?</h1>
+                  <div className={style.delete_acc}>
+                    <button id="logout">Deconectaţi-vă</button>
+                    <button id="delacc">Şterge contul</button>
+                  </div>
+                </div>
 
               </div>
             </div>
